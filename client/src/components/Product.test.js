@@ -46,5 +46,5 @@ it('renders Product component when product is passed as props', () => {
 	// screen.getByRole('');
 	expect(screen.getByRole('img')).toBeInTheDocument();
 	expect(screen.getByRole('link', { name: 'Bacon' })).toBeInTheDocument();
-	expect(screen.getByText('£ 3.59')).toBeInTheDocument();
+	expect(screen.getByText('Rs 3.59')).toBeInTheDocument();
 });

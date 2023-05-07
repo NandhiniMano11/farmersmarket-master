@@ -95,15 +95,7 @@ const Order = () => {
     successfulDelivered,
   ]);
 
-  if (!loading) {
-    const addDecimals = (num) => {
-      return (Math.round(num * 100) / 100).toFixed(2);
-    };
-
-    order.trolleyTotal = addDecimals(
-      order?.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0),
-    );
-  }
+ 
 
   const successfulPaymentHandler = (paymentResult) => {
     dispatch(payOrder(orderId, paymentResult));
@@ -187,7 +179,7 @@ const Order = () => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x £{item.price} = £{item.qty * item.price}
+                          {item.qty} x Rs{item.price} = Rs{item.qty * item.price}
                         </Col>
                       </Row>
                     </ListGroupItem>
@@ -206,13 +198,13 @@ const Order = () => {
               <ListGroup.Item>
                 <Row>
                   <Col>Order Total</Col>
-                  <Col>£{order.trolleyTotal}</Col>
+                  <Col>Rs{order.trolleyTotal}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Delivery</Col>
-                  <Col>£{order.deliveryPrice}</Col>
+                  <Col>Rs{order.deliveryPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
@@ -221,7 +213,7 @@ const Order = () => {
                     <strong>Total</strong>
                   </Col>
                   <Col>
-                    <strong>£{order.totalPrice}</strong>
+                    <strong>Rs{order.totalPrice}</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>

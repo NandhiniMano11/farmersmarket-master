@@ -40,7 +40,7 @@ const OrderList = () => {
 							<th>ORDER ID</th>
 							<th>USER</th>
 							<th>DATE</th>
-							<th>TOTAL (£)</th>
+							<th>TOTAL (Rs)</th>
 							<th>PAID</th>
 							<th>DELIVERED</th>
 						</tr>

@@ -100,7 +100,7 @@ const ProductList = () => {
 							<tr>
 								<th>PRODUCT ID</th>
 								<th>NAME</th>
-								<th>PRICE (£)</th>
+								<th>PRICE (Rs)</th>
 								<th>CATEGORY</th>
 								<th>STOCK COUNT</th>
 								<th>RATING</th>

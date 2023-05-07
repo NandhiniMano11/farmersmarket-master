@@ -113,7 +113,7 @@ const ReviewOrder = () => {
 													</Link>
 												</Col>
 												<Col md={4}>
-													{item.qty} x £{item.price} = £{item.qty * item.price}
+													{item.qty} x Rs{item.price} = Rs{item.qty * item.price}
 												</Col>
 											</Row>
 										</ListGroupItem>
@@ -132,13 +132,13 @@ const ReviewOrder = () => {
 							<ListGroup.Item>
 								<Row>
 									<Col>Trolley Total</Col>
-									<Col>£{trolley.trolleyTotal}</Col>
+									<Col>Rs{trolley.trolleyTotal}</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Delivery</Col>
-									<Col>£{trolley.deliveryPrice}</Col>
+									<Col>Rs{trolley.deliveryPrice}</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
@@ -147,7 +147,7 @@ const ReviewOrder = () => {
 										<strong>Total</strong>
 									</Col>
 									<Col>
-										<strong>£{trolley.totalPrice}</strong>
+										<strong>Rs{trolley.totalPrice}</strong>
 									</Col>
 								</Row>
 							</ListGroup.Item>

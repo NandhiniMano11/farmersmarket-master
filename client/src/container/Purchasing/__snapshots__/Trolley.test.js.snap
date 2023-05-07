@@ -56,7 +56,7 @@ Array [
               className="col-md-2"
             >
               <strong>
-                £ 
+                Rs 
                 8.79
               </strong>
             </div>
@@ -154,7 +154,7 @@ Array [
             1
             ) items
           </h2>
-          £
+          Rs
            
           8.79
         </div>

@@ -80,7 +80,7 @@ const Trolley = () => {
 											</Link>
 										</Col>
 										<Col md={2}>
-											<strong>£ {item.price}</strong>
+											<strong>Rs {item.price}</strong>
 										</Col>
 										<Col md={2}>
 											<FormControl
@@ -123,7 +123,7 @@ const Trolley = () => {
 								Subtotal (
 								{trolleyItems.reduce((acc, item) => acc + item.qty, 0)}) items
 							</h2>
-							£{' '}
+							Rs{' '}
 							{trolleyItems
 								.reduce((acc, item) => acc + item.qty * item.price, 0)
 								.toFixed(2)}

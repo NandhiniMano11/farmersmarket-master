@@ -163,7 +163,7 @@ const Product = () => {
 									/>
 								</ListGroupItem>
 								<ListGroupItem>
-									<strong>£ {product.price}</strong>
+									<strong>Rs {product.price}</strong>
 								</ListGroupItem>
 								<ListGroupItem>
 									<strong>Description: {product.description}</strong>
@@ -178,7 +178,7 @@ const Product = () => {
 										<Row>
 											<Col>Price:</Col>
 											<Col>
-												<strong>£ {product.price}</strong>
+												<strong>Rs {product.price}</strong>
 											</Col>
 										</Row>
 									</ListGroupItem>
